@@ -5,24 +5,12 @@
             "companyName": "emt",
             "downloadUrl": "http://servicios.emtmadrid.es:8080/GTFS/transitEMT.zip",
             "downloadOnLaunch": true,
-            "updatePeriod": "0 30 0 * * *",
+            "updatePeriod": "0 0 1 * * *",
             "baseURIs": {
                 "stops": "http://madrid.linkedconnections.org/emt/stops/",
                 "connections": "http://madrid.linkedconnections.org/emt/connections/",
                 "trips": "http://madrid.linkedconnections.org/emt/trips/",
                 "routes": "http://madrid.linkedconnections.org/emt/routes/"
-            }
-        },
-        {
-            "companyName": "caceres",
-            "downloadUrl": "http://opendata.caceres.es/dataset/286b7f8b-d55e-440d-83fe-4aba4764aa50/resource/cdc83567-3e11-4604-baaa-2cb0d25382b4/download/autobusescacerestransit.zip",
-            "downloadOnLaunch": true,
-            "updatePeriod": "0 0 0 * * *",
-            "baseURIs": {
-                "stops": "http://caceres.linkedconnections.org/autobuses/stops/",
-                "connections": "http://caceres.linkedconnections.org/autobuses/connections/",
-                "trips": "http://caceres.linkedconnections.org/autobuses/trips/",
-                "routes": "http://caceres.linkedconnections.org/autobuses/routes/"
             }
         }
     ]
