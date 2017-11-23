@@ -3,7 +3,7 @@
     "datasets":[
         {
             "companyName": "tbs",
-            "downloadUrl": "https://dachafra.github.io/spaingtfs/datasets/barcelona/tbs.zip",
+            "downloadUrl": "https://dachafra.github.io/spaingtfs/datasets/barcelona/TBS.zip",
             "downloadOnLaunch": true,
             "updatePeriod": "0 0 1 * * *",
             "baseURIs": {
@@ -15,7 +15,7 @@
         },
         {
             "companyName": "tbx",
-            "downloadUrl": "https://dachafra.github.io/spaingtfs/datasets/barcelona/tbx.zip",
+            "downloadUrl": "https://dachafra.github.io/spaingtfs/datasets/barcelona/TBX.zip",
             "downloadOnLaunch": true,
             "updatePeriod": "0 0 1 * * *",
             "baseURIs": {
