@@ -51,7 +51,7 @@
         },
         {
             "companyName": "lpgc",
-            "downloadUrl": "https://dachafra.github.io/spaingtfs/datasets/lpgc/gtfs.zip.zip",
+            "downloadUrl": "https://dachafra.github.io/spaingtfs/datasets/lpgc/gtfs.zip",
             "downloadOnLaunch": true,
             "updatePeriod": "0 0 1 * * *",
             "baseURIs": {
