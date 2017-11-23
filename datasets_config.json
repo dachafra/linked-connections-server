@@ -2,18 +2,6 @@
     "storage": "/tripscore/datasets",
     "datasets":[
         {
-            "companyName": "emt",
-            "downloadUrl": "http://servicios.emtmadrid.es:8080/GTFS/transitEMT.zip",
-            "downloadOnLaunch": true,
-            "updatePeriod": "0 0 1 * * *",
-            "baseURIs": {
-                "stops": "http://madrid.linkedconnections.org/emt/stops/",
-                "connections": "http://madrid.linkedconnections.org/emt/connections/",
-                "trips": "http://madrid.linkedconnections.org/emt/trips/",
-                "routes": "http://madrid.linkedconnections.org/emt/routes/"
-            }
-        },
-        {
             "companyName": "barcelonaTram",
             "downloadUrl": "http://localhost:8080/gtfs/barcelona/gtfs.zip",
             "downloadOnLaunch": true,
