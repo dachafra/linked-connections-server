@@ -3,7 +3,7 @@
     "datasets":[
         {
             "companyName": "barcelonaTram",
-            "downloadUrl": "https://github.com/dachafra/spaingtfs/raw/master/datasets/barcelona/gtfs.zip",
+            "downloadUrl": "https://dachafra.github.io/spaingtfs/datasets/barcelona/gtfs.zip",
             "downloadOnLaunch": true,
             "updatePeriod": "0 0 1 * * *",
             "baseURIs": {
@@ -15,7 +15,7 @@
         },
         {
             "companyName": "crtmMetro",
-            "downloadUrl": "https://github.com/dachafra/spaingtfs/raw/master/datasets/crtm/gtfsMetro.zip",
+            "downloadUrl": "https://dachafra.github.io/spaingtfs/datasets/crtm/gtfsMetro.zip",
             "downloadOnLaunch": true,
             "updatePeriod": "0 0 1 * * *",
             "baseURIs": {
@@ -27,7 +27,7 @@
         },
         {
             "companyName": "crtmTram",
-            "downloadUrl": "https://github.com/dachafra/spaingtfs/raw/master/datasets/crtm/gtfsLigero.zip",
+            "downloadUrl": "https://dachafra.github.io/spaingtfs/datasets/crtm/gtfsLigero.zip",
             "downloadOnLaunch": true,
             "updatePeriod": "0 0 1 * * *",
             "baseURIs": {
@@ -39,7 +39,7 @@
         },
         {
             "companyName": "crtmCercanias",
-            "downloadUrl": "https://github.com/dachafra/spaingtfs/raw/master/datasets/crtm/gtfsCercanias.zip",
+            "downloadUrl": "https://dachafra.github.io/spaingtfs/datasets/crtm/gtfsCercanias.zip",
             "downloadOnLaunch": true,
             "updatePeriod": "0 0 1 * * *",
             "baseURIs": {
@@ -48,6 +48,19 @@
                 "trips": "http://madrid.linkedconnections.org/cercanias/trips/",
                 "routes": "http://madrid.linkedconnections.org/cercanias/routes/"
             }
+        },
+        {
+            "companyName": "lpgc",
+            "downloadUrl": "https://dachafra.github.io/spaingtfs/datasets/lpgc/gtfs.zip.zip",
+            "downloadOnLaunch": true,
+            "updatePeriod": "0 0 1 * * *",
+            "baseURIs": {
+                "stops": "http://lpgc.linkedconnections.org/autobus/stops/",
+                "connections": "http://lpgc.linkedconnections.org/autobus/connections/",
+                "trips": "http://lpgc.linkedconnections.org/autobus/trips/",
+                "routes": "http://lpgc.linkedconnections.org/autobus/routes/"
+            }
         }
+
     ]
 }
