@@ -15,7 +15,7 @@
         },
         {
             "companyName": "barcelonaTram",
-            "downloadUrl": "http://localhost:8080/gtfs/barcelona/gtfs.zip",
+            "downloadUrl": "http://tripscore.lag.oeg-upm.es/gtfs/gtfs/barcelona/gtfs.zip",
             "downloadOnLaunch": true,
             "updatePeriod": "0 0 1 * * *",
             "baseURIs": {
@@ -27,7 +27,7 @@
         },
         {
             "companyName": "crtmMetro",
-            "downloadUrl": "http://localhost:8080/gtfs/crtm/gtfsMetro.zip",
+            "downloadUrl": "http://tripscore.lag.oeg-upm.es/gtfs/gtfs/crtm/gtfsMetro.zip",
             "downloadOnLaunch": true,
             "updatePeriod": "0 0 1 * * *",
             "baseURIs": {
@@ -39,7 +39,7 @@
         },
         {
             "companyName": "crtmTram",
-            "downloadUrl": "http://localhost:8080/gtfs/crtm/gtfsLigero.zip",
+            "downloadUrl": "http://tripscore.lag.oeg-upm.es/gtfs/gtfs/crtm/gtfsLigero.zip",
             "downloadOnLaunch": true,
             "updatePeriod": "0 0 1 * * *",
             "baseURIs": {
@@ -51,7 +51,7 @@
         },
         {
             "companyName": "crtmCercanias",
-            "downloadUrl": "http://localhost:8080/gtfs/crtm/gtfsCercanias.zip",
+            "downloadUrl": "http://tripscore.lag.oeg-upm.es/gtfs/gtfs/crtm/gtfsCercanias.zip",
             "downloadOnLaunch": true,
             "updatePeriod": "0 0 1 * * *",
             "baseURIs": {
@@ -63,7 +63,7 @@
         },
         {
             "companyName": "lpgc",
-            "downloadUrl": "http://localhost:8080/gtfs/lpgc/gtfs.zip",
+            "downloadUrl": "http://tripscore.lag.oeg-upm.es/gtfs/gtfs/lpgc/gtfs.zip",
             "downloadOnLaunch": true,
             "updatePeriod": "0 0 1 * * *",
             "baseURIs": {
