@@ -4,7 +4,7 @@
         {
             "companyName": "tbs",
             "downloadUrl": "https://dachafra.github.io/spaingtfs/datasets/barcelona/TBS.zip",
-            "downloadOnLaunch": true,
+            "downloadOnLaunch": false,
             "updatePeriod": "0 0 1 * * *",
             "baseURIs": {
                 "stops": "http://barcelona.linkedconnections.org/tbs/stops/",
@@ -16,7 +16,7 @@
         {
             "companyName": "tbx",
             "downloadUrl": "https://dachafra.github.io/spaingtfs/datasets/barcelona/TBX.zip",
-            "downloadOnLaunch": true,
+            "downloadOnLaunch": false,
             "updatePeriod": "0 0 1 * * *",
             "baseURIs": {
                 "stops": "http://barcelona.linkedconnections.org/tbx/stops/",
