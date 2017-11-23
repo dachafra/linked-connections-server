@@ -2,15 +2,27 @@
     "storage": "/tripscore/datasets",
     "datasets":[
         {
-            "companyName": "barcelonaTram",
-            "downloadUrl": "https://dachafra.github.io/spaingtfs/datasets/barcelona/gtfs.zip",
+            "companyName": "tbs",
+            "downloadUrl": "https://dachafra.github.io/spaingtfs/datasets/barcelona/tbs.zip",
             "downloadOnLaunch": true,
             "updatePeriod": "0 0 1 * * *",
             "baseURIs": {
-                "stops": "http://barcelona.linkedconnections.org/tram/stops/",
-                "connections": "http://barcelona.linkedconnections.org/tram/connections/",
-                "trips": "http://barcelona.linkedconnections.org/tram/trips/",
-                "routes": "http://barcelona.linkedconnections.org/tram/routes/"
+                "stops": "http://barcelona.linkedconnections.org/tbs/stops/",
+                "connections": "http://barcelona.linkedconnections.org/tbs/connections/",
+                "trips": "http://barcelona.linkedconnections.org/tbs/trips/",
+                "routes": "http://barcelona.linkedconnections.org/tbs/routes/"
+            }
+        },
+        {
+            "companyName": "tbx",
+            "downloadUrl": "https://dachafra.github.io/spaingtfs/datasets/barcelona/tbx.zip",
+            "downloadOnLaunch": true,
+            "updatePeriod": "0 0 1 * * *",
+            "baseURIs": {
+                "stops": "http://barcelona.linkedconnections.org/tbx/stops/",
+                "connections": "http://barcelona.linkedconnections.org/tbx/connections/",
+                "trips": "http://barcelona.linkedconnections.org/tbx/trips/",
+                "routes": "http://barcelona.linkedconnections.org/tbx/routes/"
             }
         },
         {
