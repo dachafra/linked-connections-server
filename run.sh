@@ -1,2 +1,2 @@
 #!/bin/bash
-npm start --host 0.0.0.0 --port 3000 --disableHostCheck
+npm start --host 0.0.0.0/server --port 3000 --disableHostCheck
