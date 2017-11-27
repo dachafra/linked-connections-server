@@ -13,7 +13,7 @@ const datasets_config = utils.datasetsConfig;
 const server_config = utils.serverConfig;
 let storage = datasets_config.storage;
 
-router.get('/:agency/connections', async (req, res) => {
+router.get('/server/:agency/connections', async (req, res) => {
     // Allow requests from different hosts
     res.set({'Access-Control-Allow-Origin': '*'});
 
@@ -45,7 +45,7 @@ router.get('/:agency/connections', async (req, res) => {
 
     // Redirect to proper URL if final / is given before params
     if (req.url.indexOf('connections/') >= 0) {
-        res.location('/' + agency + '/connections?departureTime=' + departureTime.toISOString());
+        res.location('/server/' + agency + '/connections?departureTime=' + departureTime.toISOString());
         res.status(302).send();
         return;
     }
@@ -114,7 +114,7 @@ router.get('/:agency/connections', async (req, res) => {
             while (!fs.existsSync(lv_path + departureTime.toISOString() + '.jsonld.gz')) {
                 departureTime.setMinutes(departureTime.getMinutes() - 10);
             }
-            res.location('/' + agency + '/connections?departureTime=' + departureTime.toISOString());
+            res.location('/server/' + agency + '/connections?departureTime=' + departureTime.toISOString());
             res.status(302).send();
             return;
         }
@@ -124,7 +124,7 @@ router.get('/:agency/connections', async (req, res) => {
             while (!fs.existsSync(lv_path + departureTime.toISOString() + '.jsonld.gz')) {
                 departureTime.setMinutes(departureTime.getMinutes() - 10);
             }
-            res.location('/' + agency + '/connections?departureTime=' + departureTime.toISOString());
+            res.location('/server/' + agency + '/connections?departureTime=' + departureTime.toISOString());
             res.status(302).send();
             return;
         }
