@@ -2,75 +2,15 @@
     "storage": "/tripscore/datasets",
     "datasets":[
         {
-            "companyName": "tbs",
-            "downloadUrl": "https://dachafra.github.io/spaingtfs/datasets/barcelona/TBS.zip",
-            "downloadOnLaunch": false,
+            "companyName": "emt",
+            "downloadUrl": "http://servicios.emtmadrid.es:8080/GTFS/transitEMT.zip",
+            "downloadOnLaunch": true,
             "updatePeriod": "0 0 1 * * *",
             "baseURIs": {
-                "stops": "http://barcelona.linkedconnections.org/tbs/stops/",
-                "connections": "http://barcelona.linkedconnections.org/tbs/connections/",
-                "trips": "http://barcelona.linkedconnections.org/tbs/trips/",
-                "routes": "http://barcelona.linkedconnections.org/tbs/routes/"
-            }
-        },
-        {
-            "companyName": "tbx",
-            "downloadUrl": "https://dachafra.github.io/spaingtfs/datasets/barcelona/TBX.zip",
-            "downloadOnLaunch": false,
-            "updatePeriod": "0 0 1 * * *",
-            "baseURIs": {
-                "stops": "http://barcelona.linkedconnections.org/tbx/stops/",
-                "connections": "http://barcelona.linkedconnections.org/tbx/connections/",
-                "trips": "http://barcelona.linkedconnections.org/tbx/trips/",
-                "routes": "http://barcelona.linkedconnections.org/tbx/routes/"
-            }
-        },
-        {
-            "companyName": "crtmMetro",
-            "downloadUrl": "https://dachafra.github.io/spaingtfs/datasets/crtm/gtfsMetro.zip",
-            "downloadOnLaunch": false,
-            "updatePeriod": "0 0 1 * * *",
-            "baseURIs": {
-                "stops": "http://madrid.linkedconnections.org/metro/stops/",
-                "connections": "http://madrid.linkedconnections.org/metro/connections/",
-                "trips": "http://madrid.linkedconnections.org/metro/trips/",
-                "routes": "http://madrid.linkedconnections.org/metro/routes/"
-            }
-        },
-        {
-            "companyName": "crtmTram",
-            "downloadUrl": "https://dachafra.github.io/spaingtfs/datasets/crtm/gtfsLigero.zip",
-            "downloadOnLaunch": false,
-            "updatePeriod": "0 0 1 * * *",
-            "baseURIs": {
-                "stops": "http://madrid.linkedconnections.org/tram/stops/",
-                "connections": "http://madrid.linkedconnections.org/tram/connections/",
-                "trips": "http://madrid.linkedconnections.org/tram/trips/",
-                "routes": "http://madrid.linkedconnections.org/tram/routes/"
-            }
-        },
-        {
-            "companyName": "crtmCercanias",
-            "downloadUrl": "https://dachafra.github.io/spaingtfs/datasets/crtm/gtfsCercanias.zip",
-            "downloadOnLaunch": false,
-            "updatePeriod": "0 0 1 * * *",
-            "baseURIs": {
-                "stops": "http://madrid.linkedconnections.org/cercanias/stops/",
-                "connections": "http://madrid.linkedconnections.org/cercanias/connections/",
-                "trips": "http://madrid.linkedconnections.org/cercanias/trips/",
-                "routes": "http://madrid.linkedconnections.org/cercanias/routes/"
-            }
-        },
-        {
-            "companyName": "lpgc",
-            "downloadUrl": "https://dachafra.github.io/spaingtfs/datasets/lpgc/gtfs.zip",
-            "downloadOnLaunch": false,
-            "updatePeriod": "0 0 1 * * *",
-            "baseURIs": {
-                "stops": "http://lpgc.linkedconnections.org/autobus/stops/",
-                "connections": "http://lpgc.linkedconnections.org/autobus/connections/",
-                "trips": "http://lpgc.linkedconnections.org/autobus/trips/",
-                "routes": "http://lpgc.linkedconnections.org/autobus/routes/"
+                "stops": "http://madrid.linkedconnections.org/emt/stops/",
+                "connections": "http://madrid.linkedconnections.org/emt/connections/",
+                "trips": "http://madrid.linkedconnections.org/emt/trips/",
+                "routes": "http://madrid.linkedconnections.org/emt/routes/"
             }
         },
         {

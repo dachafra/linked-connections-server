@@ -1,5 +1,5 @@
 {
     "protocol": "http",
-    "hostname": "wiener.dia.fi.upm.es:3000/server",
+    "hostname": "tripscore.lab.oeg-upm.net/server",
     "port": 3000
 }
