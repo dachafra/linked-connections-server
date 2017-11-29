@@ -15,7 +15,7 @@
         },
         {
             "companyName": "caceres",
-            "downloadUrl": "https://dachafra.github.io/spaingtfs/datasets/caceres/caceres.zip",
+            "downloadUrl": "http://dachafra.github.io/spaingtfs/datasets/caceres/caceres.zip",
             "downloadOnLaunch": true,
             "updatePeriod": "0 0 1 * * *",
             "baseURIs": {
