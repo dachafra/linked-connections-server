@@ -4,7 +4,7 @@
         {
             "companyName": "emt",
             "downloadUrl": "http://servicios.emtmadrid.es:8080/GTFS/transitEMT.zip",
-            "downloadOnLaunch": true,
+            "downloadOnLaunch": false,
             "updatePeriod": "0 0 1 * * *",
             "baseURIs": {
                 "stops": "http://madrid.linkedconnections.org/emt/stops/",
@@ -15,7 +15,7 @@
         },
         {
             "companyName": "caceres",
-            "downloadUrl": "http://opendata.caceres.es/dataset/286b7f8b-d55e-440d-83fe-4aba4764aa50/resource/cdc83567-3e11-4604-baaa-2cb0d25382b4/download/autobusescacerestransit.zip",
+            "downloadUrl": "https://dachafra.github.io/spaingtfs/datasets/caceres/caceres.zip",
             "downloadOnLaunch": true,
             "updatePeriod": "0 0 1 * * *",
             "baseURIs": {
