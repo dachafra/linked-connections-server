@@ -3,8 +3,8 @@
     "datasets":[
         {
             "companyName": "emt",
-            "downloadUrl": "http://dachafra.github.io/spaingtfs/datasets/emt/emt.zip",
-            "downloadOnLaunch": false,
+            "downloadUrl": "http://servicios.emtmadrid.es:8080/GTFS/transitEMT.zip",
+            "downloadOnLaunch": true,
             "updatePeriod": "0 0 1 * * *",
             "baseURIs": {
                 "stops": "http://madrid.linkedconnections.org/emt/stops/",
