@@ -4,7 +4,7 @@
         {
             "companyName": "emt",
             "downloadUrl": "http://dachafra.github.io/spaingtfs/datasets/emt/emt.zip",
-            "downloadOnLaunch": true,
+            "downloadOnLaunch": false,
             "updatePeriod": "0 0 1 * * *",
             "baseURIs": {
                 "stops": "http://madrid.linkedconnections.org/emt/stops/",
