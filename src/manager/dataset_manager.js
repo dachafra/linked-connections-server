@@ -459,6 +459,10 @@ class DatasetManager {
         return this._storage;
     }
 
+    set storage(storage) {
+        this._storage=storage;
+    }
+
     get jobs() {
         return this._jobs;
     }
