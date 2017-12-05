@@ -128,7 +128,7 @@ class DatasetManager {
                 await this.setBaseUris(dataset);
                 // Convert to Linked Connections
                 await this.convertGTFS2LC(companyName, file_name);
-                logger.info('Fragmenting ' + companyName + 'Linked Connections...');
+                logger.info('Fragmenting ' + companyName + ' Linked Connections...');
                 // Fragment dataset into linked data documents
                 await paginator.paginateDataset(companyName, file_name, this.storage);
                 logger.info('Compressing ' + companyName + ' Linked Connections fragments...')

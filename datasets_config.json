@@ -1,5 +1,5 @@
 {
-    "storage": "/tripscore/datasets",
+    "storage": "/Users/dchaves/Documents/repos/OASIS/MadridTripscore/linked-connections-server/datasets",
     "datasets":[
         {
             "companyName": "emt",
@@ -27,7 +27,7 @@
         },
         {
             "companyName": "crtmCercanias",
-            "downloadUrl": "https://dachafra.github.io/spaingtfs/datasets/crtm/gtfsCercanias.zip",
+            "downloadUrl": "https://dachafra.github.io/spaingtfs/datasets/crtm/cercanias.zip",
             "downloadOnLaunch": true,
             "updatePeriod": "0 0 1 * * *",
             "baseURIs": {
@@ -36,7 +36,32 @@
                 "trips": "http://madrid.linkedconnections.org/train/trips/",
                 "routes": "http://madrid.linkedconnections.org/train/routes/"
             }
+        },
+        {
+            "companyName": "crtmTram",
+            "downloadUrl": "https://dachafra.github.io/spaingtfs/datasets/crtm/metroligero.zip",
+            "downloadOnLaunch": true,
+            "updatePeriod": "0 0 1 * * *",
+            "baseURIs": {
+                "stops": "http://madrid.linkedconnections.org/tram/stops/",
+                "connections": "http://madrid.linkedconnections.org/tram/connections/",
+                "trips": "http://madrid.linkedconnections.org/tram/trips/",
+                "routes": "http://madrid.linkedconnections.org/tram/routes/"
+            }
+        },
+        {
+            "companyName": "crtmMetro",
+            "downloadUrl": "https://dachafra.github.io/spaingtfs/datasets/crtm/metro.zip",
+            "downloadOnLaunch": true,
+            "updatePeriod": "0 0 1 * * *",
+            "baseURIs": {
+                "stops": "http://madrid.linkedconnections.org/metro/stops/",
+                "connections": "http://madrid.linkedconnections.org/metro/connections/",
+                "trips": "http://madrid.linkedconnections.org/metro/trips/",
+                "routes": "http://madrid.linkedconnections.org/metro/routes/"
+            }
         }
+
 
     ]
 }
