@@ -1,5 +1,5 @@
 {
-    "storage": "/tripscore/datasets",
+    "storage": "/Users/dchaves/Documents/repos/OASIS/MadridTripscore/linked-connections-server/datasets",
     "datasets":[
         {
             "companyName": "emt",
@@ -40,7 +40,7 @@
         {
             "companyName": "crtmTram",
             "downloadUrl": "https://dachafra.github.io/spaingtfs/datasets/crtm/metroligero.zip",
-            "downloadOnLaunch": true,
+            "downloadOnLaunch": false,
             "updatePeriod": "0 0 1 * * *",
             "baseURIs": {
                 "stops": "http://madrid.linkedconnections.org/tram/stops/",
@@ -52,7 +52,7 @@
         {
             "companyName": "crtmMetro",
             "downloadUrl": "https://dachafra.github.io/spaingtfs/datasets/crtm/metro.zip",
-            "downloadOnLaunch": true,
+            "downloadOnLaunch": false,
             "updatePeriod": "0 0 1 * * *",
             "baseURIs": {
                 "stops": "http://madrid.linkedconnections.org/metro/stops/",
