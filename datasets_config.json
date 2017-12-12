@@ -1,5 +1,5 @@
 {
-    "storage": "/Users/dchaves/Documents/repos/OASIS/MadridTripscore/linked-connections-server/datasets",
+    "storage": "/tripscore/datasets",
     "datasets":[
         {
             "companyName": "emt",
