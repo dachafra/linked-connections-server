@@ -4,7 +4,7 @@ COMPANY_NAME="$1"
 LAST_MODIFIED="$2"
 STORAGE="$3"
 
-#../../node_modules/gtfs2lc/bin/gtfs2lc-sort.sh ${STORAGE}/datasets/${COMPANY_NAME}/${LAST_MODIFIED}_tmp
+../../node_modules/gtfs2lc/bin/gtfs2lc-sort.sh ${STORAGE}/datasets/${COMPANY_NAME}/${LAST_MODIFIED}_tmp
 echo "Converting ${COMPANY_NAME} GTFS feed to Linked Connections..."
 node ../../node_modules/gtfs2lc/bin/gtfs2lc ${STORAGE}/datasets/${COMPANY_NAME}/${LAST_MODIFIED}_tmp -f jsonld -b ${STORAGE}/datasets/${COMPANY_NAME}/baseUris.json -S LevelStore > ${STORAGE}/linked_connections/${COMPANY_NAME}/${LAST_MODIFIED}_tmp.jsonld
 rm -r ${STORAGE}/datasets/${COMPANY_NAME}/${LAST_MODIFIED}_tmp
