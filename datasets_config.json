@@ -2,32 +2,8 @@
     "storage": "/tripscore/datasets",
     "datasets":[
         {
-            "companyName": "emt",
-            "downloadUrl": "http://servicios.emtmadrid.es:8080/GTFS/transitEMT.zip",
-            "downloadOnLaunch": false,
-            "updatePeriod": "0 0 1 * * *",
-            "baseURIs": {
-                "stops": "http://madrid.linkedconnections.org/emt/stops/",
-                "connections": "http://madrid.linkedconnections.org/emt/connections/",
-                "trips": "http://madrid.linkedconnections.org/emt/trips/",
-                "routes": "http://madrid.linkedconnections.org/emt/routes/"
-            }
-        },
-        {
-            "companyName": "caceres",
-            "downloadUrl": "http://opendata.caceres.es/dataset/286b7f8b-d55e-440d-83fe-4aba4764aa50/resource/cdc83567-3e11-4604-baaa-2cb0d25382b4/download/autobusescacerestransit.zip",
-            "downloadOnLaunch": false,
-            "updatePeriod": "0 0 1 * * *",
-            "baseURIs": {
-                "stops": "http://caceres.linkedconnections.org/autobus/stops/",
-                "connections": "http://caceres.linkedconnections.org/autobus/connections/",
-                "trips": "http://caceres.linkedconnections.org/autobus/trips/",
-                "routes": "http://caceres.linkedconnections.org/autobus/routes/"
-            }
-        },
-        {
-            "companyName": "crtmCercanias",
-            "downloadUrl": "https://dachafra.github.io/spaingtfs/datasets/crtm/cercanias.zip",
+            "companyName": "train",
+            "downloadUrl": "https://dachafra.github.io/spaingtfs/datasets/crtm/train.zip",
             "downloadOnLaunch": true,
             "updatePeriod": "0 0 1 * * *",
             "baseURIs": {
@@ -38,9 +14,9 @@
             }
         },
         {
-            "companyName": "crtmTram",
-            "downloadUrl": "https://dachafra.github.io/spaingtfs/datasets/crtm/metroligero.zip",
-            "downloadOnLaunch": false,
+            "companyName": "tram",
+            "downloadUrl": "https://dachafra.github.io/spaingtfs/datasets/crtm/tram.zip",
+            "downloadOnLaunch": true,
             "updatePeriod": "0 0 1 * * *",
             "baseURIs": {
                 "stops": "http://madrid.linkedconnections.org/tram/stops/",
@@ -50,9 +26,9 @@
             }
         },
         {
-            "companyName": "crtmMetro",
+            "companyName": "metro",
             "downloadUrl": "https://dachafra.github.io/spaingtfs/datasets/crtm/metro.zip",
-            "downloadOnLaunch": false,
+            "downloadOnLaunch": true,
             "updatePeriod": "0 0 1 * * *",
             "baseURIs": {
                 "stops": "http://madrid.linkedconnections.org/metro/stops/",
