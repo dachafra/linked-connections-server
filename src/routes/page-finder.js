@@ -11,9 +11,10 @@ const readdir = util.promisify(fs.readdir);
 const router = express.Router();
 const datasets_config = utils.datasetsConfig;
 const server_config = utils.serverConfig;
+let extension = server_config.extension +'/';
 let storage = datasets_config.storage;
 
-router.get('/crtm/:agency/connections', async (req, res) => {
+router.get('/'+extension+':agency/connections', async (req, res) => {
     // Allow requests from different hosts
     res.set({'Access-Control-Allow-Origin': '*'});
 
@@ -31,7 +32,7 @@ router.get('/crtm/:agency/connections', async (req, res) => {
         protocol = x_forwarded_proto;
     }
 
-    const host = protocol + '://' + server_config.hostname + '/';
+    const host = protocol + '://' + server_config.hostname + '/' + extension ;
     const agency = req.params.agency;
     const iso = /(\d{4})-(\d{2})-(\d{2})T(\d{2})\:(\d{2})\:(\d{2})\.(\d{3})Z/;
     let departureTime = new Date(decodeURIComponent(req.query.departureTime));
@@ -45,7 +46,7 @@ router.get('/crtm/:agency/connections', async (req, res) => {
 
     // Redirect to proper URL if final / is given before params
     if (req.url.indexOf('connections/') >= 0) {
-        res.location('/crtm/' + agency + '/connections?departureTime=' + departureTime.toISOString());
+        res.location('/'+extension+ agency + '/connections?departureTime=' + departureTime.toISOString());
         res.status(302).send();
         return;
     }
@@ -114,7 +115,7 @@ router.get('/crtm/:agency/connections', async (req, res) => {
             while (!fs.existsSync(lv_path + departureTime.toISOString() + '.jsonld.gz')) {
                 departureTime.setMinutes(departureTime.getMinutes() - 10);
             }
-            res.location('/crtm/' + agency + '/connections?departureTime=' + departureTime.toISOString());
+            res.location('/'+extension+ agency + '/connections?departureTime=' + departureTime.toISOString());
             res.status(302).send();
             return;
         }
@@ -124,7 +125,7 @@ router.get('/crtm/:agency/connections', async (req, res) => {
             while (!fs.existsSync(lv_path + departureTime.toISOString() + '.jsonld.gz')) {
                 departureTime.setMinutes(departureTime.getMinutes() - 10);
             }
-            res.location('/crtm/' + agency + '/connections?departureTime=' + departureTime.toISOString());
+            res.location('/'+extension+agency + '/connections?departureTime=' + departureTime.toISOString());
             res.status(302).send();
             return;
         }

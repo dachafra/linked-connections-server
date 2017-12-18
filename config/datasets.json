@@ -1,0 +1,23 @@
+{
+    "storage": "/tripscore/datasets",
+    "datasets":[
+        {
+            "companyName": "companyX",
+            "downloadUrl": "http://...",
+            "downloadOnLaunch": true,
+            "updatePeriod": "0 0 1 * * *",
+            "realTimeData": {
+                "downloadUrl": "http://...",
+                "updatePeriod": "*/30 * * * * *"
+            },
+            "baseURIs": {
+                "connections": "http://example.org/connections/",
+                "stops": "http://example.org/stops/",
+                "trips": "http://example.org/trips/",
+                "routes": "http://example.org/routes/"
+            }
+        }
+
+
+    ]
+}

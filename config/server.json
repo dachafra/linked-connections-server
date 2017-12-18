@@ -1,0 +1,6 @@
+{
+    "protocol": "http",
+    "hostname": "hostname",
+    "extension": "barcelona",
+    "port": 3000
+}

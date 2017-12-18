@@ -1,5 +1,6 @@
 {
     "protocol": "http",
     "hostname": "localhost:3000",
+    "extension": "globalCompanyOrCity",
     "port": 3000
 }
