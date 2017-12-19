@@ -128,7 +128,7 @@ class Gtfsrt2lc {
                             var arrivalTime = null;
                             var departureDelay = 0;
                             var arrivalDelay = 0;
-
+                            var departureTimeAux=null;
                             if (stop_times[j].departure && stop_times[j].departure.time && stop_times[j].departure.time.low) {
                                 departureTime = moment(stop_times[j].departure.time.low * 1000);
                             }
@@ -151,7 +151,10 @@ class Gtfsrt2lc {
                             let gtfs_route = await this.routesStore.get(gtfs_trip.route_id);
                             let route_short_name = gtfs_route.route_short_name;
 
-                            let connectionId = uris.connections + departureStop + '/' + encodeURIComponent(departureTime.format('YYYYMMDD')) + '/'
+
+                            departureTimeAux = moment((new Date).getTime());
+
+                            let connectionId = uris.connections + departureStop + '/' + encodeURIComponent(departureTimeAux.format('YYYYMMDD')) + '/'
                                 + route_short_name + trip_short_name;
 
                             var obj = {
@@ -159,15 +162,14 @@ class Gtfsrt2lc {
                                 "@type": type,
                                 "departureStop": uris.stops + departureStop,
                                 "arrivalStop": uris.stops + arrivalStop,
-                                "departureTime": departureTime.toISOString(),
+                                "departureTime": departureTime != null ? departureTime.toISOString() : null,
                                 "arrivalTime": arrivalTime != null ? arrivalTime.toISOString() : null,
                                 "direction": gtfs_trip.trip_headsign,
                                 "departureDelay": departureDelay,
                                 "arrivalDelay": arrivalDelay,
-                                "gtfs:trip": uris.trips + route_short_name + trip_short_name + '/' + encodeURIComponent(departureTime.format('YYYYMMDD')),
+                                "gtfs:trip": uris.trips + route_short_name + trip_short_name + '/' + encodeURIComponent(departureTimeAux.format('YYYYMMDD')),
                                 "gtfs:route": uris.routes + route_short_name + trip_short_name
                             }
-
                             array.push(JSON.stringify(obj));
                         }
                     } catch (err) {
