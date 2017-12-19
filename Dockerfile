@@ -4,11 +4,12 @@ MAINTAINER dachafra@gmail.com
 
 WORKDIR /tripscore/linked-connections-server
 
-RUN mkdir ../datasets \
-	&& git clone https://github.com/dachafra/linked-connections-server.git . \
-	&& git checkout development \
-	&& chmod +x run.sh \
-	&& npm install
+COPY package*.json ./
+
+RUN	npm install \
+	&& mkdir ../datasets
+
+COPY . .
 
 ENTRYPOINT ["/tripscore/linked-connections-server/run.sh"]
 
