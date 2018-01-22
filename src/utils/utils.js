@@ -8,8 +8,8 @@ const readFile = util.promisify(fs.readFile);
 module.exports = new class Utils {
 
     constructor() {
-        this._datasetsConfig = JSON.parse(fs.readFileSync('./config/datasets.json', 'utf8'));
-        this._serverConfig = JSON.parse(fs.readFileSync('./config/server.json', 'utf8'));
+        this._datasetsConfig = JSON.parse(fs.readFileSync('/tripscore/config/'+process.env.CITY+'/datasets.json', 'utf8'));
+        this._serverConfig = JSON.parse(fs.readFileSync('/tripscore/config/'+process.env.CITY+'/server.json', 'utf8'));
     }
 
     readAndGunzip(path) {

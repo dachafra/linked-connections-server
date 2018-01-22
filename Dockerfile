@@ -7,7 +7,8 @@ WORKDIR /tripscore/linked-connections-server
 COPY package*.json ./
 
 RUN	npm install \
-	&& mkdir ../datasets
+	&& mkdir ../datasets \
+	&& mkdir ../config
 
 COPY . .
 
