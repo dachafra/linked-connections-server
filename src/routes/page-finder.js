@@ -11,7 +11,7 @@ const readdir = util.promisify(fs.readdir);
 const router = express.Router();
 const datasets_config = utils.datasetsConfig;
 const server_config = utils.serverConfig;
-let extension = server_config.extension;
+let extension = server_config.extension || '';
 let storage = datasets_config.storage;
 
 router.get('/'+extension+':agency/connections', async (req, res) => {

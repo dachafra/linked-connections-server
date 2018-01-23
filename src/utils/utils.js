@@ -8,7 +8,6 @@ const readFile = util.promisify(fs.readFile);
 module.exports = new class Utils {
 
     constructor() {
-        if(process.env.CITY)
         this._datasetsConfig = JSON.parse(fs.readFileSync(path+'/datasets.json', 'utf8'));
         this._serverConfig = JSON.parse(fs.readFileSync(path+'/server.json', 'utf8'));
     }
