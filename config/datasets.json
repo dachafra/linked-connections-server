@@ -3,7 +3,7 @@
     "datasets":[
         {
             "companyName": "train",
-            "downloadUrl": "http://dachafra.github.io/spaingtfs/datasets/crtm/train.zip",
+            "downloadUrl": "http://dachafra.github.io/spaingtfs/datasets/madrid/train.zip",
             "downloadOnLaunch": true,
             "updatePeriod": "0 0 1 * * *",
             "baseURIs": {
@@ -15,7 +15,7 @@
         },
         {
             "companyName": "tram",
-            "downloadUrl": "http://dachafra.github.io/spaingtfs/datasets/crtm/tram.zip",
+            "downloadUrl": "http://dachafra.github.io/spaingtfs/datasets/madrid/tram.zip",
             "downloadOnLaunch": true,
             "updatePeriod": "0 0 1 * * *",
             "baseURIs": {
