@@ -1,23 +1,31 @@
 {
-  "storage": "/tripscore/datasets",
-  "datasets":[
-    {
-      "companyName": "companyX",
-      "downloadUrl": "http://...",
-      "downloadOnLaunch": true,
-      "updatePeriod": "0 0 1 * * *",
-      "realTimeData": {
-        "downloadUrl": "http://...",
-        "updatePeriod": "*/30 * * * * *"
-      },
-      "baseURIs": {
-        "connections": "http://example.org/connections/",
-        "stops": "http://example.org/stops/",
-        "trips": "http://example.org/trips/",
-        "routes": "http://example.org/routes/"
-      }
-    }
+    "storage": "/tripscore/datasets",
+    "datasets":[
+        {
+            "companyName": "train",
+            "downloadUrl": "http://dachafra.github.io/spaingtfs/datasets/crtm/train.zip",
+            "downloadOnLaunch": true,
+            "updatePeriod": "0 0 1 * * *",
+            "baseURIs": {
+                "connections": "http://madrid.linkedconnections.org/train/connections/",
+                "stops": "http://madrid.linkedconnections.org/train/stops/",
+                "trips": "http://madrid.linkedconnections.org/train/trips/",
+                "routes": "http://madrid.linkedconnections.org/train/routes/"
+            }
+        },
+        {
+            "companyName": "tram",
+            "downloadUrl": "http://dachafra.github.io/spaingtfs/datasets/crtm/tram.zip",
+            "downloadOnLaunch": true,
+            "updatePeriod": "0 0 1 * * *",
+            "baseURIs": {
+                "connections": "http://madrid.linkedconnections.org/tram/connections/",
+                "stops": "http://madrid.linkedconnections.org/tram/stops/",
+                "trips": "http://madrid.linkedconnections.org/tram/trips/",
+                "routes": "http://madrid.linkedconnections.org/tram/routes/"
+            }
+        }
 
 
-  ]
+    ]
 }
