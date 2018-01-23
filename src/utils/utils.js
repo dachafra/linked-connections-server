@@ -2,14 +2,15 @@ const util = require('util');
 const fs = require('fs');
 const zlib = require('zlib');
 const unzip = require('unzip');
-
+const path = process.env.CITY || '/tripscore/linked-connections-server/config';
 const readFile = util.promisify(fs.readFile);
 
 module.exports = new class Utils {
 
     constructor() {
-        this._datasetsConfig = JSON.parse(fs.readFileSync('/tripscore/config/'+process.env.CITY+'/datasets.json', 'utf8'));
-        this._serverConfig = JSON.parse(fs.readFileSync('/tripscore/config/'+process.env.CITY+'/server.json', 'utf8'));
+        if(process.env.CITY)
+        this._datasetsConfig = JSON.parse(fs.readFileSync(path+'/datasets.json', 'utf8'));
+        this._serverConfig = JSON.parse(fs.readFileSync(path+'/server.json', 'utf8'));
     }
 
     readAndGunzip(path) {
