@@ -2,7 +2,7 @@ const util = require('util');
 const fs = require('fs');
 const zlib = require('zlib');
 const unzip = require('unzip');
-const path = process.env.CITY || '/tripscore/linked-connections-server/config';
+const path = process.env.CITY || './config';
 const readFile = util.promisify(fs.readFile);
 
 module.exports = new class Utils {

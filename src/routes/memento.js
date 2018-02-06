@@ -9,8 +9,9 @@ const router = express.Router();
 const datasets_config = utils.datasetsConfig;
 const server_config = utils.serverConfig;
 const storage = datasets_config.storage;
+let extension = server_config.extension || '';
 
-router.get('/:agency', async (req, res) => {
+router.get('/'+extension+':agency', async (req, res) => {
     let x_forwarded_proto = req.headers['x-forwarded-proto'];
     let protocol = '';
     if (typeof x_forwarded_proto == 'undefined' || x_forwarded_proto == '') {
@@ -23,7 +24,7 @@ router.get('/:agency', async (req, res) => {
         protocol = x_forwarded_proto;
     }
 
-    const host = protocol + '://' + server_config.hostname + '/';
+    const host = protocol + '://' + server_config.hostname + '/'+extension;
     const agency = req.params.agency;
     const version = req.query.version;
     const resource = req.query.departureTime;
@@ -46,7 +47,7 @@ router.get('/:agency', async (req, res) => {
             // Create an array of all RT updates
             let rt_array = rt_buffer.join('').split('\n').map(JSON.parse);
             // Combine static and real-time data
-            jsonld_graph = utils.aggregateRTData(jsonld_graph, rt_array, agency, departureTime, mementoDate);
+            jsonld_graph = utils.aggregateRTData(jsonld_graph, rt_array, extension+'_'+agency, departureTime, mementoDate);
         }
 
         // Finally build a JSON-LD document containing the data and return it to the client

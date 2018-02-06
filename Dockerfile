@@ -8,7 +8,7 @@ COPY package*.json ./
 
 RUN	npm install \
 	&& mkdir ../datasets \
-	&& mkdir ../config
+	&& mkdir ../config 	
 
 COPY . .
 

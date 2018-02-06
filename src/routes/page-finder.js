@@ -88,7 +88,7 @@ router.get('/'+extension+':agency/connections', async (req, res) => {
                 departureTime.setMinutes(departureTime.getMinutes() - 10);
             }
             // Set Memento headers pointng to the found version
-            res.location('/memento/' + agency + '?version=' + closest_version + '&departureTime=' + departureTime.toISOString());
+            res.location('/memento/'+ extension + agency + '?version=' + closest_version + '&departureTime=' + departureTime.toISOString());
             res.set({
                 'Vary': 'Accept-Encoding, Accept-Datetime',
                 'Link': '<' + host + agency + '/connections?departureTime=' + departureTime.toISOString() + '>; rel=\"original timegate\"'
