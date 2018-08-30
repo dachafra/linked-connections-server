@@ -1,0 +1,31 @@
+{
+    "storage": "./datasets",
+    "datasets":[
+        {
+            "companyName": "tbs",
+            "downloadUrl": "http://dachafra.github.io/spaingtfs/datasets/barcelona/TBS.zip",
+            "downloadOnLaunch": true,
+            "updatePeriod": "0 0 1 * * *",
+            "fragmentSize": 500000,
+            "baseURIs": {
+                "connections": "http://barcelona.linkedconnections.org/tbs/connections/",
+                "stops": "http://barcelona.linkedconnections.org/tbs/stops/",
+                "trips": "http://barcelona.linkedconnections.org/tbs/trips/",
+                "routes": "http://barcelona.linkedconnections.org/tbs/routes/"
+            }
+        },
+        {
+            "companyName": "tbx",
+            "downloadUrl": "http://dachafra.github.io/spaingtfs/datasets/barcelona/TBX.zip",
+            "downloadOnLaunch": true,
+            "updatePeriod": "0 0 1 * * *",
+            "baseURIs": {
+                "connections": "http://barcelona.linkedconnections.org/tbx/connections/",
+                "stops": "http://barcelona.linkedconnections.org/tbx/stops/",
+                "trips": "http://barcelona.linkedconnections.org/tbx/trips/",
+                "routes": "http://barcelona.linkedconnections.org/tbx/routes/"
+            }
+        }
+
+    ]
+}

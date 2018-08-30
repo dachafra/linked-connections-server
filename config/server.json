@@ -1,0 +1,7 @@
+{
+    "hostname": "tripscore.lab.oeg-upm.net",
+    "port": 3000,
+    "extension": "barcelona/tram",
+    "protocol": "http",
+    "logLevel": "info"
+}
