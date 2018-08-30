@@ -4,10 +4,14 @@
         {
             "companyName": "company x",
             "downloadUrl": "http://...",
+            "downloadOnLaunch": true,
             "updatePeriod": "* * * * * *",
+            "fragmentSize": 400000,
             "realTimeData": {
                 "downloadUrl": "http://...",
-                "updatePeriod": "* * * * * *"
+                "updatePeriod": "* * * * * *",
+                "fragmentTimeSpan": 600,
+                "compressionPeriod": "* * * * * *"
             },
             "baseURIs": {
                 "stops": "http://example.org/stops/",
@@ -19,6 +23,7 @@
         {
             "companyName": "company y",
             "downloadUrl": "http://...",
+            "downloadOnLaunch": false,
             "updatePeriod": "* * * * * *",
             "baseURIs": {
                 "stops": "http://example.org/stops/",
